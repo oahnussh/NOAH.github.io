@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog</title>
+  <title>SH Blogs</title>
 
   <!-- Layui (local) -->
   <link rel="stylesheet" href="assets/layui/dist/layui-v2.13.3/layui/css/layui.css" />
@@ -13,28 +13,25 @@
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="gh-theme gh-no-side">
   <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
-      <div class="layui-logo">My GitHub Blog</div>
+      <div class="layui-logo">My Blog</div>
       <ul class="layui-nav layui-layout-left">
         <li class="layui-nav-item"><a href="#/">首页</a></li>
         <li class="layui-nav-item"><a href="html/about.html">关于</a></li>
       </ul>
       <ul class="layui-nav layui-layout-right">
-        <li class="layui-nav-item"><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li class="layui-nav-item nav-avatar" title="头像占位">
+          <a href="javascript:;" aria-label="头像占位">
+            <img
+              class="nav-avatar-img"
+              alt=""
+              src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2732%27%20height%3D%2732%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20x%3D%271%27%20y%3D%271%27%20width%3D%2730%27%20height%3D%2730%27%20rx%3D%2715%27%20fill%3D%27%23f6f8fa%27%20stroke%3D%27%23d0d7de%27/%3E%3Cpath%20d%3D%27M16%2016c3.2%200%205.8-2.6%205.8-5.8S19.2%204.4%2016%204.4%2010.2%207%2010.2%2010.2%2012.8%2016%2016%2016zm0%203c-5.3%200-9.6%203-9.6%206.6%200%20.6.5%201%201%201h17.2c.6%200%201-.4%201-1%200-3.6-4.3-6.6-9.6-6.6z%27%20fill%3D%27%2396a3b3%27/%3E%3C/svg%3E"
+            />
+          </a>
+        </li>
       </ul>
-    </div>
-
-    <div class="layui-side layui-bg-black">
-      <div class="layui-side-scroll">
-        <div class="side-title">文章</div>
-        <ul class="layui-nav layui-nav-tree" lay-filter="postList" id="postList">
-          <li class="layui-nav-item">
-            <a href="javascript:;">加载中…</a>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div class="layui-body">
@@ -61,6 +58,6 @@
   <script src="assets/vendor/dompurify/purify.min.js"></script>
   <script src="assets/vendor/highlightjs/highlight.min.js"></script>
 
-  <script src="js/app.js"></script>
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
