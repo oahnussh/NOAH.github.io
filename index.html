@@ -1,9 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title> NOAH Blog </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog</title>
+
+  <!-- Layui (local) -->
+  <link rel="stylesheet" href="assets/layui/dist/layui-v2.13.3/layui/css/layui.css" />
+
+  <!-- Highlight.js (local) -->
+  <link rel="stylesheet" href="assets/vendor/highlightjs/github.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">My GitHub Blog</div>
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="#/">首页</a></li>
+        <li class="layui-nav-item"><a href="html/about.html">关于</a></li>
+      </ul>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item"><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <div class="side-title">文章</div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="postList" id="postList">
+          <li class="layui-nav-item">
+            <a href="javascript:;">加载中…</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+      <div class="page">
+        <div id="postHeader" class="post-header">
+          <h1 id="postTitle" class="post-title">欢迎</h1>
+          <div id="postMeta" class="post-meta"></div>
+        </div>
+        <div id="postContent" class="post-content layui-text">
+          <p>左侧点击文章标题，即可展示对应的 Markdown 内容。</p>
+          <p class="muted">提示：新增 Markdown 到 <code>blog/</code> 后，刷新页面即可自动出现（优先用 GitHub API 扫描目录；失败时使用 <code>blog/index.json</code> 兜底）。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-footer">
+      <span id="footerText">© <span id="year"></span> Blog</span>
+    </div>
+  </div>
+
+  <!-- libs -->
+  <script src="assets/layui/dist/layui-v2.13.3/layui/layui.js"></script>
+  <script src="assets/vendor/marked/marked.min.js"></script>
+  <script src="assets/vendor/dompurify/purify.min.js"></script>
+  <script src="assets/vendor/highlightjs/highlight.min.js"></script>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
