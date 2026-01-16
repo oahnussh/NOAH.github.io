@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/getting-started.md",
+                "file": "blog/MQTT Broker - Eclipse Mosquitto - Windows环境下使用初级教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "getting-started"
+              "title": "MQTT Broker - Eclipse Mosquitto - Windows环境下使用初级教程"
             }
           }
         ]
@@ -184,10 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3ea418df70be921d",
+  "active": "9449979f43d87868",
   "lastOpenFiles": [
-    "blog/hello-world.md",
     "blog/getting-started.md",
+    "blog/hello-world.md",
     "blog/MQTT Broker - Eclipse Mosquitto - Windows环境下使用初级教程.md",
     "README.md"
   ]
